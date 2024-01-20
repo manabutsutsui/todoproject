@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="alert alert-danger" role="alert">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <h2>本当に削除してもいいですか？</h2>
+            <input type="submit" value="delete">
+        </form>
+    </div>
+</div>
+{% endblock %}
